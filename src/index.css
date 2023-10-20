@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.1);
+    padding-inline: 24px;
+    padding-block: 36px;
+  }
+
+  .btn {
+    background-color: theme("colors.moderate-cyan");
+    padding-block: 18px;
+    padding-inline: 36px;
+    color: white;
+    border-radius: 9999px;
+    font-weight: 700;
+  }
+  .btn:is(:hover, :focus-visible) {
+    background-color: theme("colors.dark-cyan");
+  }
+
+  .radiobtn {
+    appearance: none;
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid theme("colors.dark-gray");
+		padding: 3px;
+  }
+	.radiobtn:checked {
+		background: theme('colors.moderate-cyan') content-box;
+	}
+	.radiobtn:hover {
+		border-color: theme('colors.moderate-cyan');
+	}
+}
