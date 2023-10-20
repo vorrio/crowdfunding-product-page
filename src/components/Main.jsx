@@ -35,7 +35,7 @@ export default function Main() {
             src={logo}
             alt="Logo"
           />
-          <h1 className="text-center font-bold text-[1.5rem] text-black leading-[1.75rem] mt-[16px]">
+          <h1 className="text-center font-bold text-[1.5rem] text-black leading-[1.75rem] mt-[16px] sm:text-[1.75rem]">
             Mastercraft Bamboo Monitor Riser
           </h1>
           <p className="text-center text-dark-gray mt-[20px]">
